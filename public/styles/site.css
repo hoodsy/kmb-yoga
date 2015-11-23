@@ -1,0 +1,153 @@
+/**
+ * Colors
+ * ======
+**/
+/**
+ * Fonts
+ * =====
+**/
+@font-face {
+  font-family: 'museo-slab-300';
+  src: url("/fonts/museo/museo-slab-300.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'museo-slab-500';
+  src: url("/fonts/museo/museo-slab-500.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'museo-100';
+  src: url("/fonts/museo/museo-100.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'museo-500';
+  src: url("/fonts/museo/museo-500.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'museo-sans-cond-500';
+  src: url("/fonts/museo/museo-sans-cond-500.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'museo-rounded-700';
+  src: url("/fonts/museo/museo-rounded-700.otf") format("opentype"); }
+
+/**
+ * Type Sizing / Spacing
+ * =====================
+**/
+/**
+ * Type Color Variables
+ * =====================
+**/
+/**
+ * Base Element Typograpy
+ * ======================
+**/
+html,
+body {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'museo-slab-300';
+  color: #FFF;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+p {
+  margin: 18.096px 0;
+  max-width: 636px; }
+
+a {
+  font-family: 'museo-500';
+  text-decoration: none;
+  text-transform: uppercase; }
+
+a:hover {
+  color: #E0F2D3 !important; }
+
+h1,
+h2,
+h3 {
+  font-family: 'museo-sans-cond-500';
+  text-transform: uppercase; }
+  h1 a,
+  h2 a,
+  h3 a {
+    font-family: 'museo-sans-cond-500'; }
+
+h2,
+h3 {
+  margin: 0; }
+
+h1 {
+  font-size: 32px;
+  line-height: 40px; }
+
+h2 {
+  font-size: 24px;
+  line-height: 30px; }
+
+h3 {
+  font-size: 16px;
+  line-height: 20px;
+  color: #E0F2D3; }
+
+cite {
+  display: block;
+  font-style: normal;
+  font-size: 12.8px; }
+
+body {
+  background-color: #75985B; }
+
+#footer {
+  margin-top: 30px;
+  border-top: 1px solid #eeeeee;
+  padding-top: 30px;
+  color: #777777; }
+
+.gallery-image img {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px; }
+
+.container-fluid {
+  display: flex;
+  flex-direction: row; }
+
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent; }
+
+.navbar-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.navbar-brand-img {
+  height: 60px; }
+
+.navbar-brand-label {
+  color: #E0F2D3;
+  font-size: 0.875rem;
+  font-family: 'museo-rounded-700';
+  cursor: pointer; }
+
+.navbar-collapse {
+  display: flex;
+  align-items: center; }
+
+.nav {
+  display: flex; }
+  .nav li {
+    padding: 15px; }
+
+.bumper {
+  flex: 1; }
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; }

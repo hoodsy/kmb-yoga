@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="132px" height="132px" viewBox="0 0 132 132" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4 (15575) - http://www.bohemiancoding.com/sketch -->
+    <title>128</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="128" sketch:type="MSArtboardGroup" stroke="#CAE5B6" stroke-width="5">
+            <g id="Oval-1-+-body" sketch:type="MSLayerGroup" transform="translate(2.000000, 2.000000)">
+                <circle id="Oval-1" sketch:type="MSShapeGroup" cx="64" cy="64" r="64"></circle>
+                <g id="body" transform="translate(32.000000, 22.000000)" sketch:type="MSShapeGroup">
+                    <path d="M49.5,85 C56.127417,85 64.5,81.627417 64.5,75 C64.5,68.372583 58.9457545,65 49.5,65 C40.0542455,65 32.5,75 32.5,75 C32.5,75 40.0456543,85 49.5,85 Z M15.5,85 C8.872583,85 0.5,81.627417 0.5,75 C0.5,68.372583 6.05424547,65 15.5,65 C24.9457545,65 32.5,75 32.5,75 C32.5,75 24.9543457,85 15.5,85 Z" id="Oval-7"></path>
+                    <path d="M31.998169,30.8256497 C30.4859074,29.0090161 27.880546,27 23.7509241,27 C16.7215677,27 12,33.5118038 12,39.593247 C12,48.4464364 31.998169,61.9599991 31.998169,61.9599991 C31.998169,61.9599991 51.996338,48.4464364 51.996338,39.593247 C51.996338,33.5118038 47.2739703,27 40.244214,27 C36.1161919,27 33.5104305,29.0090161 31.998169,30.8256497 Z" id="Shape"></path>
+                    <circle id="Oval-2" cx="32" cy="10" r="10"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

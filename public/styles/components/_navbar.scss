@@ -1,0 +1,37 @@
+// Navbar
+// ======
+
+.navbar-default {
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.navbar-brand {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.navbar-brand-img {
+	height: 60px;
+}
+.navbar-brand-label {
+	color: $green-light;
+	font-size: 0.875rem;
+	font-family: 'museo-rounded-700';
+	cursor: pointer;
+}
+
+.navbar-collapse {
+	display: flex;
+	align-items: center;
+}
+.nav {
+	display: flex;
+	li {
+		padding: 15px;
+	}
+}
+
+.bumper {
+	flex: 1;
+}

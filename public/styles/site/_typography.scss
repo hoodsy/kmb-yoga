@@ -1,0 +1,129 @@
+/**
+ * Fonts
+ * =====
+**/
+
+@font-face {
+	font-family: 'museo-slab-300';
+	src: url('/fonts/museo/museo-slab-300.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'museo-slab-500';
+	src: url('/fonts/museo/museo-slab-500.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'museo-100';
+	src: url('/fonts/museo/museo-100.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'museo-500';
+	src: url('/fonts/museo/museo-500.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'museo-sans-cond-500';
+	src: url('/fonts/museo/museo-sans-cond-500.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'museo-rounded-700';
+	src: url('/fonts/museo/museo-rounded-700.otf') format('opentype');
+}
+
+/**
+ * Type Sizing / Spacing
+ * =====================
+**/
+
+$fs-body: 16px;
+$fs-h1: $fs-body * 2;
+$fs-h2: $fs-body * 1.5;
+$fs-h3: $fs-body;
+$fs-headline: $fs-h1 * 4;
+
+$lh-body: $fs-body * 1.5;
+$lh-h1: $fs-h1 * 1.25;
+$lh-h2: $fs-h2 * 1.25;
+$lh-h3: $fs-h3 * 1.25;
+$lh-headline: $fs-headline * 1.25;
+
+$lw: $lh-body * 26.5;
+
+$fw-regular: 400;
+$fw-medium: 600;
+
+/**
+ * Type Color Variables
+ * =====================
+**/
+
+$text-color-body: $white;
+$text-color-subheader: $green-light;
+
+/**
+ * Base Element Typograpy
+ * ======================
+**/
+
+html,
+body {
+	font-size: $fs-body;
+	line-height: $lh-body;
+	font-family: 'museo-slab-300';
+	color: $text-color-body;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+p {
+	margin: ($lh-body * 0.754) 0;
+	max-width: $lw;
+}
+
+a {
+	font-family: 'museo-500';
+	text-decoration: none;
+	text-transform: uppercase;
+}
+a:hover {
+	color: $text-color-subheader !important;
+}
+
+
+h1,
+h2,
+h3 {
+	font-family: 'museo-sans-cond-500';
+	text-transform: uppercase;
+	a { font-family: 'museo-sans-cond-500'; }
+}
+
+h2,
+h3 {
+	margin: 0;
+}
+
+h1 {
+	font-size: $fs-h1;
+	line-height: $lh-h1;
+}
+
+h2 {
+	font-size: $fs-h2;
+	line-height: $lh-h2;
+}
+
+h3 {
+	font-size: $fs-h3;
+	line-height: $lh-h3;
+	color: $text-color-subheader;
+}
+
+cite {
+	display: block;
+	font-style: normal;
+	font-size: $fs-body * 0.8;
+}
