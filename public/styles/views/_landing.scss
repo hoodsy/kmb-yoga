@@ -1,0 +1,81 @@
+// Landing View
+// ============
+
+#landing-hero-1 {
+	min-height: 75vh;
+	background-image: url("../images/yoga_kbarnes_039.JPG");
+	background-size: 100vw;
+	background-position: center center;
+	box-shadow: $grey-opacity;
+}
+
+#landing-about,
+#landing-workshops {
+	.container-fluid {
+		align-items: flex-start;
+		margin: 0 auto;
+		max-width: 650px;
+		text-align: left;
+	}
+}
+
+// About
+// =====
+#landing-about {
+	background: $green-dark;
+	.container-fluid {
+		@include green-text();
+	}
+}
+
+.headline {
+	align-self: center;
+	margin-bottom: 25px;
+	border-bottom: 2px solid $purple-light;
+	border-radius: 1px;
+}
+
+// Workshops
+// =========
+#landing-workshops {
+	background: $grey-dark;
+	.container-fluid {
+		@include grey-text();
+	}
+}
+
+.workshops-table {
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	align-items: center;
+	width: 100%;
+}
+.workshops-table-item {
+	display: flex;
+	align-items: baseline;
+	width: 100%;
+	padding: 15px 0;
+	border-top: 2px solid $grey-light;
+	&:last-child {
+		border-bottom: 2px solid $grey-light;
+	}
+}
+.workshop-title {
+	font-family: 'museo-sans-cond-500';
+	font-size: 1.5rem;
+}
+.workshop-description {
+	margin-left: auto;
+}
+
+.workshops-btn-grp {
+	align-self: flex-end;
+	padding: 25px 0;
+	.btn {
+		display: inline-block;
+	}
+	.btn:first-child {
+		margin-right: 15px;
+	}
+}

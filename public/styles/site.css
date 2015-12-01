@@ -46,7 +46,7 @@ html,
 body {
   font-size: 16px;
   line-height: 24px;
-  font-family: 'museo-slab-300';
+  font-family: 'museo-slab-500';
   color: #FFF;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -56,18 +56,18 @@ p {
   max-width: 636px; }
 
 a {
+  color: #E5D3F2;
   font-family: 'museo-500';
   text-decoration: none;
   text-transform: uppercase; }
 
 a:hover {
-  color: #E0F2D3 !important; }
+  color: #FFF; }
 
 h1,
 h2,
 h3 {
-  font-family: 'museo-sans-cond-500';
-  text-transform: uppercase; }
+  font-family: 'museo-sans-cond-500'; }
   h1 a,
   h2 a,
   h3 a {
@@ -96,6 +96,7 @@ cite {
   font-size: 12.8px; }
 
 body {
+  margin: 0;
   background-color: #75985B; }
 
 #footer {
@@ -111,11 +112,25 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1200px; }
+  padding: 25px;
+  width: 1200px; }
 
 .container-fluid {
   display: flex;
-  flex-direction: row; }
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px; }
+
+.container-navbar {
+  display: flex;
+  padding: 25px 0; }
+
+#header {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100%; }
 
 .navbar-default {
   background-color: transparent;
@@ -127,11 +142,11 @@ body {
   align-items: center; }
 
 .navbar-brand-img {
-  height: 60px; }
+  height: 75px; }
 
 .navbar-brand-label {
   color: #E0F2D3;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-family: 'museo-rounded-700';
   cursor: pointer; }
 
@@ -143,9 +158,113 @@ body {
   display: flex; }
   .nav li {
     padding: 15px; }
+    .nav li a {
+      color: #E0F2D3; }
+      .nav li a:hover {
+        color: #FFF; }
 
 .bumper {
   flex: 1; }
+
+.btn {
+  align-self: center;
+  padding: 10px 30px;
+  font-size: 0.875rem;
+  font-family: 'museo-500';
+  font-weight: 600;
+  color: #E5D3F2;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  background-color: #7E5B98;
+  transition: all 0.25s ease-in-out; }
+  .btn:hover {
+    background-color: #715188; }
+
+.btn-contact {
+  margin-top: 30px; }
+
+.btn-contact-footer {
+  font-family: 'museo-100';
+  font-size: 0.75rem;
+  text-transform: initial; }
+
+.btn-divider {
+  visibility: hidden;
+  margin: -4px; }
+
+.btn-workshops {
+  padding: 10px 20px; }
+
+#landing-hero-1 {
+  min-height: 75vh;
+  background-image: url("../images/yoga_kbarnes_039.JPG");
+  background-size: 100vw;
+  background-position: center center;
+  box-shadow: inset 0 0 0 100vh rgba(77, 76, 79, 0.5); }
+
+#landing-about .container-fluid,
+#landing-workshops .container-fluid {
+  align-items: flex-start;
+  margin: 0 auto;
+  max-width: 650px;
+  text-align: left; }
+
+#landing-about {
+  background: #75985B; }
+  #landing-about .container-fluid {
+    color: #E0F2D3; }
+    #landing-about .container-fluid h1,
+    #landing-about .container-fluid h2,
+    #landing-about .container-fluid h3 {
+      color: #E0F2D3; }
+
+.headline {
+  align-self: center;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #E5D3F2;
+  border-radius: 1px; }
+
+#landing-workshops {
+  background: #4D4C4F; }
+  #landing-workshops .container-fluid {
+    color: #E0E0E1; }
+    #landing-workshops .container-fluid h1,
+    #landing-workshops .container-fluid h2,
+    #landing-workshops .container-fluid h3 {
+      color: #E0E0E1; }
+
+.workshops-table {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  width: 100%; }
+
+.workshops-table-item {
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+  padding: 15px 0;
+  border-top: 2px solid #E0E0E1; }
+  .workshops-table-item:last-child {
+    border-bottom: 2px solid #E0E0E1; }
+
+.workshop-title {
+  font-family: 'museo-sans-cond-500';
+  font-size: 1.5rem; }
+
+.workshop-description {
+  margin-left: auto; }
+
+.workshops-btn-grp {
+  align-self: flex-end;
+  padding: 25px 0; }
+  .workshops-btn-grp .btn {
+    display: inline-block; }
+  .workshops-btn-grp .btn:first-child {
+    margin-right: 15px; }
 
 ul {
   padding: 0;

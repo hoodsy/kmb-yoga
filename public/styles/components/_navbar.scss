@@ -1,6 +1,13 @@
 // Navbar
 // ======
 
+#header {
+	position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .navbar-default {
 	background-color: transparent;
 	border-color: transparent;
@@ -12,11 +19,11 @@
 	align-items: center;
 }
 .navbar-brand-img {
-	height: 60px;
+	height: 75px;
 }
 .navbar-brand-label {
 	color: $green-light;
-	font-size: 0.875rem;
+	font-size: 1rem;
 	font-family: 'museo-rounded-700';
 	cursor: pointer;
 }
@@ -29,6 +36,10 @@
 	display: flex;
 	li {
 		padding: 15px;
+		a {
+			color: $green-light;
+			&:hover { color: $white; }
+		}
 	}
 }
 

@@ -1,0 +1,37 @@
+// Button
+// ======
+
+.btn {
+	align-self: center;
+	padding: 10px 30px;
+	font-size: 0.875rem;
+	font-family: 'museo-500';
+	font-weight: 600;
+	color: $purple-light;
+	text-transform: uppercase;
+	text-align: center;
+	border: none;
+	border-radius: 4px;
+	background-color: $purple-dark;
+	transition: all 0.25s ease-in-out;
+	&:hover {
+		background-color: darken($purple-dark, 5%);
+	}
+}
+
+.btn-contact {
+	margin-top: 30px;
+}
+.btn-contact-footer {
+	font-family: 'museo-100';
+	font-size: 0.75rem;
+	text-transform: initial;
+}
+.btn-divider {
+	visibility: hidden;
+	margin: -4px;
+}
+
+.btn-workshops {
+	padding: 10px 20px;
+}

@@ -5,6 +5,7 @@
 // =============
 
 body {
+	margin: 0;
 	background-color: $green-dark;
 }
 
@@ -20,9 +21,9 @@ body {
 }
 
 .gallery-image img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 // Containers
@@ -30,10 +31,19 @@ body {
 
 .container {
 	margin: 0 auto;
-	max-width: 1200px;
+	padding: 25px;
+	width: 1200px;
 }
 
 .container-fluid {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 25px;
 }
+
+.container-navbar {
+	display: flex;
+	padding: 25px 0;
+} 

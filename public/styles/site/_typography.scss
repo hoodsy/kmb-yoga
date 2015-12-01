@@ -63,6 +63,28 @@ $fw-medium: 600;
 $text-color-body: $white;
 $text-color-subheader: $green-light;
 
+@mixin green-text() {
+	h1,
+	h2,
+	h3 { color: $green-light; }
+	color: $green-light;
+}
+
+@mixin purple-text() {
+	h1,
+	h2,
+	h3 { color: $purple-light; }
+	color: $purple-light;
+}
+
+@mixin grey-text() {
+	h1,
+	h2,
+	h3 { color: $grey-light; }
+	color: $grey-light;
+}
+
+
 /**
  * Base Element Typograpy
  * ======================
@@ -72,7 +94,7 @@ html,
 body {
 	font-size: $fs-body;
 	line-height: $lh-body;
-	font-family: 'museo-slab-300';
+	font-family: 'museo-slab-500';
 	color: $text-color-body;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -84,12 +106,13 @@ p {
 }
 
 a {
+	color: $purple-light;
 	font-family: 'museo-500';
 	text-decoration: none;
 	text-transform: uppercase;
 }
 a:hover {
-	color: $text-color-subheader !important;
+	color: $white;
 }
 
 
@@ -97,7 +120,7 @@ h1,
 h2,
 h3 {
 	font-family: 'museo-sans-cond-500';
-	text-transform: uppercase;
+	// text-transform: uppercase;
 	a { font-family: 'museo-sans-cond-500'; }
 }
 

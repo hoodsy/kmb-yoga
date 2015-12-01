@@ -21,9 +21,15 @@
 @import "site/layout";
 
 // Component Styles
-// ===========
+// ================
 
 @import "components/navbar";
+@import "components/buttons";
+
+// View Styles
+// ===========
+
+@import "views/landing";
 
 // Base Styles
 // ===========
