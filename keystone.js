@@ -11,6 +11,8 @@ var keystone = require('keystone');
 
 keystone.init({
 
+	'wysiwyg cloudinary images': true,
+
 	'name': 'kmb-yoga',
 	'brand': 'kmb-yoga',
 	

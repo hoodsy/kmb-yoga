@@ -4,12 +4,14 @@ block content
 	#landing-hero-1
 	#landing-about
 		.container-fluid
-			h1.headline Grow like you want to.
+			h1.headline Yoga from the inside-out.
 			p.landing-about-body1 
 				| With yoga trainings for novices to instructors, 
-				| I bring 30 years of passion and knowledge to every 
-				| session. Together we can attain the intellectual and 
-				| phyiscal growth that you’ve always wanted.
+				| I bring 30 years of study, passion and knowledge to every 
+				| class and training! Through Embodied-inquery&#8482;,
+				| together we will explore the physical, spiritual, and
+				| intellectual growth that you are seeking, so you can 
+				| realize your fullest potential.
 				<br>
 				<br>
 				block.landing-quote
@@ -26,7 +28,7 @@ block content
 				| For deeper explorations into the anatomical and philosophical
 				| aspects of yoga, venture over to 
 				a(href='/') my blog.
-			a(href='/').btn.btn-contact 
+			a(href='/contact').btn.btn-contact 
 				| Ready to grow together?
 				hr.btn-divider
 				span.btn-contact-footer Click here to get in touch
@@ -37,6 +39,14 @@ block content
 			div.workshops-btn-grp
 				a(href='/').btn.btn-workshops Teacher Training
 				a(href='/').btn.btn-workshops View Classes
+	#landing-hero-2
+	#landing-audio
+		.container-fluid
+			h1.headline Workshops
+			!{ workshops.content.full }
+			div.workshops-btn-grp
+				a(href='/').btn.btn-audio Teacher Training
+				a(href='/').btn.btn-audio View Classes
 
 
 	

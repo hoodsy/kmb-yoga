@@ -9,17 +9,6 @@ body {
 	background-color: $green-dark;
 }
 
-#header {
-	
-}
-
-#footer {
-	margin-top: 30px;
-	border-top: 1px solid #eeeeee;
-	padding-top: 30px;
-	color: #777777;
-}
-
 .gallery-image img {
   display: block;
   max-width: 100%;
@@ -45,5 +34,4 @@ body {
 
 .container-navbar {
 	display: flex;
-	padding: 25px 0;
 } 

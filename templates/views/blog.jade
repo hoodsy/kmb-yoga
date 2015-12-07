@@ -2,7 +2,7 @@ extends ../layouts/default
 
 mixin post(post)
 	.post(data-ks-editable=editable(user, { list: 'Post', id: post.id }))
-		h2: a(href='/blog/post/' + post.slug)= post.title
+		h2: a.blog-post-title(href='/blog/post/' + post.slug)= post.title
 		p.lead.text-muted Posted 
 			if post.publishedDate
 				| on #{post._.publishedDate.format('MMMM Do, YYYY')} 
@@ -18,23 +18,23 @@ mixin post(post)
 				| by #{post.author.name.first}
 		if post.image.exists
 			img(src=post._.image.fit(160,160)).img.pull-right
-		p!= post.content.brief
+		p.blog-content-brief!= post.content.brief
 		if post.content.extended
 			p.read-more: a(href='/blog/post/' + post.slug) Read more...
 
 block intro
-	.container
+	#blog: .container-fluid: .blog-header
 		h1= data.category ? data.category.name : 'Blog'
 
 block content
-	.container: .row
+	.container-fluid: .blog-row
 		.col-sm-8.col-md-9
 			if filters.category && !data.category
 				h3.text-muted Invalid Category.
 			else
 				if data.posts.results.length
 					if data.posts.totalPages > 1
-						h4.text-weight-normal Showing 
+						span.text-weight-normal Showing 
 							strong #{data.posts.first}
 							|  to 
 							strong #{data.posts.last}
@@ -42,7 +42,7 @@ block content
 							strong #{data.posts.total}
 							|  posts.
 					else
-						h4.text-weight-normal Showing #{utils.plural(data.posts.results.length, '* post')}.
+						span.blog-count Showing #{utils.plural(data.posts.results.length, '* post')}.
 					.blog
 						each post in data.posts.results
 							+post(post)

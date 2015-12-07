@@ -1,0 +1,35 @@
+// Blog View
+// =========
+
+#blog {
+	padding-top: 5%;
+}
+
+.blog-header {
+	padding: 50px 0 2px;
+	margin-bottom: 20px;
+	color: $green-light;
+	border-bottom: 2px solid $purple-light;
+	border-radius: 1px;
+	h1 {
+		margin: 0;
+	}
+}
+
+.blog-row {
+	width: 100%;
+	max-width: 650px;
+	color: $green-light;
+}
+
+.blog-post-title {
+	text-transform: capitalize;
+}
+
+.blog-content-brief {
+	color: $white;
+}
+
+.blog-count {
+	
+}

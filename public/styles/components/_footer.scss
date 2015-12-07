@@ -1,0 +1,44 @@
+// Footer
+// ======
+
+#footer {
+	padding: 75px 0;
+	@include grey-text();
+	font-family: 'museo-500';
+	font-size: 0.875rem;
+	background-color: $grey-dark;
+	border: none;
+}
+
+#footer .container-fluid {
+	flex-direction: row;
+	justify-content: initial;
+	max-width: 650px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#footer p {
+	margin: 0;
+}
+
+.footer-right {
+	margin-left: auto;
+}
+
+#footer .btn-contact {
+	display: block;
+	margin: 0;
+}
+
+.footer-keystone {
+	font-size: 0.75rem;
+}
+
+.footer-facebook {
+	display: inline-block;
+}
+
+.footer-user {
+	padding-left:10px;
+}

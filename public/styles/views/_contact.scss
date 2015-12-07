@@ -1,0 +1,36 @@
+// Landing View
+// ============
+
+.contact-header {
+	// padding-top: 5%;
+	text-align: center;
+}
+
+.contact-form {
+	width: 650px;
+	min-height: 75vh;
+	padding-bottom: 75px;
+}
+
+.contact-form .form-group {
+	padding: 10px 0;
+	display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+	padding: 10px;
+	font-size: 1rem;
+	font-family: 'museo-slab-300';
+	color: $grey-dark;
+	border: none;
+	resize: vertical;
+	&:focus {
+		outline: none;
+	}
+}
+
+.contact-submitted {
+	height: 50vh;
+}

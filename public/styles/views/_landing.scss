@@ -2,19 +2,27 @@
 // ============
 
 #landing-hero-1 {
-	min-height: 75vh;
+	// margin-top: -5%;
+	min-height: 768px;
 	background-image: url("../images/yoga_kbarnes_039.JPG");
 	background-size: 100vw;
-	background-position: center center;
+	box-shadow: $grey-opacity;
+}
+#landing-hero-2 {
+	min-height: 590px;
+	background-image: url("../images/yoga_kbarnes_045.JPG");
+	background-size: 100vw;
 	box-shadow: $grey-opacity;
 }
 
 #landing-about,
-#landing-workshops {
+#landing-workshops,
+#landing-audio {
 	.container-fluid {
 		align-items: flex-start;
 		margin: 0 auto;
 		max-width: 650px;
+		padding: 25px 0 50px;
 		text-align: left;
 	}
 }
@@ -77,5 +85,14 @@
 	}
 	.btn:first-child {
 		margin-right: 15px;
+	}
+}
+
+// Audio
+// =====
+#landing-audio {
+	background: $purple-dark;
+	.container-fluid {
+		@include purple-text();
 	}
 }

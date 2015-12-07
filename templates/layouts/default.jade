@@ -57,12 +57,12 @@ html
 						ul.nav.navbar-nav.navbar-left
 							each link in navLinks
 								li(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label
-							if user
-								if user.canAccessKeystone
-									li: a(href='/keystone') Open Keystone
-								li: a(href='/keystone/signout') Sign Out
-							else
-								li: a(href='/keystone/signin') Sign In
+							//- if user
+							//- 	if user.canAccessKeystone
+							//- 		li: a(href='/keystone') Open Keystone
+							//- 	li: a(href='/keystone/signout') Sign Out
+							//- else
+							//- 	li: a(href='/keystone/signin') Sign In
 
 		//- BODY
 		#body
@@ -83,10 +83,25 @@ html
 
 
 		//- FOOTER
-		.container: #footer
-
-			//- You don't _have_ to include a link saying your site is powered by KeystoneJS, but we appreciate it!
-			p Powered by <a href="http://keystonejs.com" target="_blank">KeystoneJS</a>.
+		#footer: .container-fluid
+			
+			div.footer-left
+				p Karen Miscall Bannon / Master Yoga Instructor
+					br
+					| karenmb123@gmail.com
+				a.footer-facebook(href="https://www.facebook.com/karenmiscallbannonyoga/" target="_blank")
+					img(src="/images/facebook.svg")
+				if user
+					if user.canAccessKeystone
+						a.footer-user(href='/keystone') Open Keystone
+					a.footer-user(href='/keystone/signout') Sign Out
+				else
+					a.footer-user(href='/keystone/signin') Sign In
+			div.footer-right
+				a(href='/contact').btn.btn-contact 
+					| Ready to grow together?
+					hr.btn-divider
+					span.btn-contact-footer Click here to get in touch
 
 
 		//- JAVASCRIPT
@@ -95,6 +110,7 @@ html
 		//- and the KeystoneJS Content Editor. If you are not targeting IE8,
 		//- you can upgrade to 2.1.4 (also bundled) for better performance.
 		script(src='/js/jquery/jquery-1.11.3.min.js')
+		script(src='/js/animations/navbar.js')
 
 		//- Customise which Bootstrap javascript files are served by including
 		//- them specifically here, instead of bootstrap-3.3.5.min.js

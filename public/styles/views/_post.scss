@@ -1,0 +1,37 @@
+// Post View
+// =========
+
+#post {
+	padding-top: 5%;
+}
+
+.post-back {
+	margin-bottom: 0;
+}
+
+.post-title {
+	margin: 0;
+}
+
+#post .image-wrap img {
+	width: 100%;
+}
+
+#post article {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	color: $green-light;
+	.post,
+	header {
+		width: 650px;
+	}
+	header {
+		margin: 5px 0 25px;
+		text-align: left;
+		border-bottom: 2px solid $purple-light;
+	}
+
+}

@@ -15,7 +15,11 @@
 	background-color: $purple-dark;
 	transition: all 0.25s ease-in-out;
 	&:hover {
+		color: $white;
 		background-color: darken($purple-dark, 5%);
+	}
+	&:focus {
+		outline: none;
 	}
 }
 
@@ -32,6 +36,20 @@
 	margin: -4px;
 }
 
-.btn-workshops {
+.btn-workshops,
+.btn-audio {
 	padding: 10px 20px;
+	background-color: transparent;
+}
+.btn-workshops {
+	color: $grey-light;
+	&:hover {
+		background-color: darken($grey-dark, 5%);
+	}
+}
+
+.btn-contact-form {
+	float: right;
+	margin: 10px 0;
+	cursor: pointer;
 }

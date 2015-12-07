@@ -25,11 +25,16 @@
 
 @import "components/navbar";
 @import "components/buttons";
+@import "components/footer";
 
 // View Styles
 // ===========
 
 @import "views/landing";
+@import "views/gallery";
+@import "views/contact";
+@import "views/blog";
+@import "views/post";
 
 // Base Styles
 // ===========
@@ -38,4 +43,11 @@ ul {
 	padding: 0;
 	margin: 0;
 	list-style-type: none;
+}
+
+#flash-messages > div {
+	display: flex;
+	align-items: center;
+	margin: 2.5% auto;
+	flex-direction: column;
 }
