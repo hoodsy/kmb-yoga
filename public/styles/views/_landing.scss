@@ -96,3 +96,11 @@
 		@include purple-text();
 	}
 }
+
+.audio-title {
+	text-transform: capitalize;	
+}
+.btn-audio {
+	cursor: pointer;
+}
+

@@ -22,12 +22,12 @@ block content
 			h2.landing-about-header2 Eager to learn more?
 			p.landing-about-body2 
 				| Read about 
-				a(href='/') my yoga journey.
+				a(href='/blog/post/my-yoga-journey') my yoga journey.
 				br
 				br
 				| For deeper explorations into the anatomical and philosophical
 				| aspects of yoga, venture over to 
-				a(href='/') my blog.
+				a(href='/blog') my blog.
 			a(href='/contact').btn.btn-contact 
 				| Ready to grow together?
 				hr.btn-divider
@@ -37,38 +37,59 @@ block content
 			h1.headline Workshops
 			!{ workshops.content.full }
 			div.workshops-btn-grp
-				a(href='/').btn.btn-workshops Teacher Training
-				a(href='/').btn.btn-workshops View Classes
+				a(href='/blog/post/60200-hour-course').btn.btn-workshops 60/200 Hour Course
+				a(href='/blog/post/500-hour-course').btn.btn-workshops 500 Hour Course
+				a(href='/blog/post/class-schedule').btn.btn-workshops View Classes
 	#landing-hero-2
 	#landing-audio
 		.container-fluid
-			h1.headline Workshops
-			!{ workshops.content.full }
+			h1.headline Embodyoga&reg; Basic Flow Album
+			ul.workshops-table
+				li.workshops-table-item
+					span.audio-title 01 Introduction
+				li.workshops-table-item
+					span.audio-title 02 Shanti Chant
+				li.workshops-table-item
+					span.audio-title 03 Half Surya Namaskar / Sun Salutation
+				li.workshops-table-item
+					span.audio-title 04 Classical Sun Salutation
+				li.workshops-table-item
+					span.audio-title 05 Surya Namaskar A / Sun Salutation A
+				li.workshops-table-item
+					span.audio-title 06 Surya Namaskar B / Sun Salutation B
+				li.workshops-table-item
+					span.audio-title 07 Padangusthasana / Pada Hastasana / Big Toe / Hands-Feet Pose
+				li.workshops-table-item
+					span.audio-title 08 Trikonasana / Triangle
+				li.workshops-table-item
+					span.audio-title 09 Parsvottanasana / Pyramid
+				li.workshops-table-item
+					span.audio-title 10 virabhadrasana 2 / parsva konasana / warrior 2 / extended side angle
+				li.workshops-table-item
+					span.audio-title 11 parivritta parsva konsasana / revolved side angle
+				li.workshops-table-item
+					span.audio-title 12 vrksasana / tree pose
+				li.workshops-table-item
+					span.audio-title 13 prasarita padottansasana / wide-legged forward fold
+				li.workshops-table-item
+					span.audio-title 14 ab sequence
+				li.workshops-table-item
+					span.audio-title 15 setu bandha / urdva danurasana / bridge / backbend
+				li.workshops-table-item
+					span.audio-title 16 jathara parlvartanasana / supine moving twist
+				li.workshops-table-item
+					span.audio-title 17 salumba sarvangasana / viparita karani / shoulderstand / variation
+				li.workshops-table-item
+					span.audio-title 18 matsyasana / fish
+				li.workshops-table-item
+					span.audio-title 19 dolphin / acunchanasana / headstand prep
+				li.workshops-table-item
+					span.audio-title 20 yoga mudrasana / savasana / final rest
 			div.workshops-btn-grp
-				a(href='/').btn.btn-audio Teacher Training
-				a(href='/').btn.btn-audio View Classes
-
-
-	
-
-
-	//- .container: .jumbotron
-	//- 	h1 Welcome
-	//- 	p This is your new <a href='http://keystonejs.com' target='_blank'>KeystoneJS</a> website.
-	//- 	p It includes the latest versions of
-	//- 		| <a href='http://getbootstrap.com/' target='_blank'>Bootstrap</a>
-	//- 		| and <a href='http://www.jquery.com/' target='_blank'>jQuery</a>.
-	//- 	p Visit the <a href='http://keystonejs.com/guide' target='_blank'>Getting Started</a> guide to learn how to customise it.
-	//- 	hr
-	//- 	if user && user.canAccessKeystone
-	//- 		p
-	//- 			a(href='/keystone').btn.btn-lg.btn-primary Open the Admin UI
-	//- 	else
-	//- 		p We have created a default Admin user for you with the email <strong>bernard.logan4@gmail.com</strong> and the password <strong>UPUP&away44</strong>.
-	//- 		p
-	//- 			a(href='/keystone/signin', style='margin-right: 10px').btn.btn-lg.btn-primary Sign in
-	//- 			|  to use the Admin UI.
-	//- 	hr
-	//- 	p Remember to <a href='https://github.com/keystonejs/keystone' target='_blank'>Star KeystoneJS on GitHub</a> and
-	//- 		| <a href='https://twitter.com/keystonejs' target='_blank'>follow @keystonejs</a> on twitter for updates.
--//
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+				">
+				<button name='submit' class='btn btn-audio'>Buy now for $10</button>
+				</form>
+				a(href='/' style='display:none;').btn.btn-audio

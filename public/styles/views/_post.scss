@@ -18,18 +18,17 @@
 }
 
 #post article {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	justify-content: initial;
 	width: 100%;
+	min-height: 75vh;
 	color: $green-light;
 	.post,
 	header {
 		width: 650px;
 	}
 	header {
-		margin: 5px 0 25px;
+		margin: 0 0 25px;
+		padding-bottom: 5px;
 		text-align: left;
 		border-bottom: 2px solid $purple-light;
 	}

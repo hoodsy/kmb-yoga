@@ -33,3 +33,22 @@
 .blog-count {
 	
 }
+.blog .post {
+	margin: 15px 0;
+	padding: 25px 0;
+	border-top: 2px solid $green-light;
+	img {
+		float: left;
+		padding-right: 15px;
+	}
+}
+
+.blog-categories {
+	float: right;
+	a {
+		padding-left: 10px;
+	}
+	.active {
+		color: $white;
+	}
+}

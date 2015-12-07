@@ -2,6 +2,8 @@ extends ../layouts/default
 
 mixin post(post)
 	.post(data-ks-editable=editable(user, { list: 'Post', id: post.id }))
+		if post.image.exists
+			img(src=post._.image.fit(160,160)).img
 		h2: a.blog-post-title(href='/blog/post/' + post.slug)= post.title
 		p.lead.text-muted Posted 
 			if post.publishedDate
@@ -16,15 +18,14 @@ mixin post(post)
 						|  
 			if post.author
 				| by #{post.author.name.first}
-		if post.image.exists
-			img(src=post._.image.fit(160,160)).img.pull-right
+		br
 		p.blog-content-brief!= post.content.brief
 		if post.content.extended
 			p.read-more: a(href='/blog/post/' + post.slug) Read more...
 
 block intro
 	#blog: .container-fluid: .blog-header
-		h1= data.category ? data.category.name : 'Blog'
+		h1= data.category ? data.category.name : 'KMB\'s Blog'
 
 block content
 	.container-fluid: .blog-row
@@ -32,6 +33,12 @@ block content
 			if filters.category && !data.category
 				h3.text-muted Invalid Category.
 			else
+				if data.categories.length
+					.blog-categories
+						.list-group
+							a(href='/blog', class=!data.category ? 'active' : false).list-group-item All Categories
+							each cat in data.categories
+								a(href='/blog/' + cat.key, class=data.category && data.category.id == cat.id ? 'active' : false).list-group-item= cat.name
 				if data.posts.results.length
 					if data.posts.totalPages > 1
 						span.text-weight-normal Showing 
@@ -65,11 +72,3 @@ block content
 						h3.text-muted There are no posts in the category #{data.category.name}.
 					else
 						h3.text-muted There are no posts yet.
-		
-		if data.categories.length
-			.col-sm-4.col-md-3
-				h2 Categories
-				.list-group(style='margin-top: 70px;')
-					a(href='/blog', class=!data.category ? 'active' : false).list-group-item All Categories
-					each cat in data.categories
-						a(href='/blog/' + cat.key, class=data.category && data.category.id == cat.id ? 'active' : false).list-group-item= cat.name

@@ -332,6 +332,12 @@ body {
     #landing-audio .container-fluid h3 {
       color: #E5D3F2; }
 
+.audio-title {
+  text-transform: capitalize; }
+
+.btn-audio {
+  cursor: pointer; }
+
 #gallery {
   padding-top: 5%;
   background-color: #4D4C4F; }
@@ -414,6 +420,21 @@ body {
 .blog-content-brief {
   color: #FFF; }
 
+.blog .post {
+  margin: 15px 0;
+  padding: 25px 0;
+  border-top: 2px solid #E0F2D3; }
+  .blog .post img {
+    float: left;
+    padding-right: 15px; }
+
+.blog-categories {
+  float: right; }
+  .blog-categories a {
+    padding-left: 10px; }
+  .blog-categories .active {
+    color: #FFF; }
+
 #post {
   padding-top: 5%; }
 
@@ -427,17 +448,16 @@ body {
   width: 100%; }
 
 #post article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  justify-content: initial;
   width: 100%;
+  min-height: 75vh;
   color: #E0F2D3; }
   #post article .post,
   #post article header {
     width: 650px; }
   #post article header {
-    margin: 5px 0 25px;
+    margin: 0 0 25px;
+    padding-bottom: 5px;
     text-align: left;
     border-bottom: 2px solid #E5D3F2; }
 
