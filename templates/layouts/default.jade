@@ -84,25 +84,27 @@ html
 
 
 		//- FOOTER
-		#footer: .container-fluid
-			
-			div.footer-left
-				p Karen Miscall Bannon / Master Yoga Instructor
-					br
-					| karenmb123@gmail.com
-				a.footer-facebook(href="https://www.facebook.com/karenmiscallbannonyoga/" target="_blank")
-					img(src="/images/facebook.svg")
-				if user
-					if user.canAccessKeystone
-						a.footer-user(href='/keystone') Open Keystone
-					a.footer-user(href='/keystone/signout') Sign Out
-				else
-					a.footer-user(href='/keystone/signin') Sign In
-			div.footer-right
-				a(href='/contact').btn.btn-contact 
-					| Ready to grow together?
-					hr.btn-divider
-					span.btn-contact-footer Click here to get in touch
+		#footer
+			.container-fluid
+				div.footer-left
+					p Karen Miscall Bannon / Master Yoga Instructor
+						br
+						| karenmb123@gmail.com
+					a.footer-facebook(href="https://www.facebook.com/karenmiscallbannonyoga/" target="_blank")
+						img(src="/images/facebook.svg")
+					if user
+						if user.canAccessKeystone
+							a.footer-user(href='/keystone') Open Keystone
+						a.footer-user(href='/keystone/signout') Sign Out
+					else
+						a.footer-user(href='/keystone/signin') Sign In
+				div.footer-right
+					a(href='/contact').btn.btn-contact 
+						| Ready to grow together?
+						hr.btn-divider
+						span.btn-contact-footer Click here to get in touch
+			.container-fluid.certifications
+				img(src="/images/yoga-certifications.svg")
 
 
 		//- JAVASCRIPT

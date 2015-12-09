@@ -178,10 +178,10 @@ body {
       .nav li a:hover {
         color: #FFF; }
 
-.nav-btn {
+.navbar-btn {
   display: none; }
   @media (max-width: 768px) {
-    .nav-btn {
+    .navbar-btn {
       display: block; } }
 
 .bumper {
@@ -277,6 +277,12 @@ body {
 .footer-user {
   padding-left: 10px; }
 
+#footer .container-fluid.certifications {
+  padding-top: 50px;
+  justify-content: center; }
+  #footer .container-fluid.certifications img {
+    height: 100px; }
+
 #landing-hero-1 {
   min-height: 768px;
   background-image: url("../images/yoga_kbarnes_039.JPG");
@@ -366,6 +372,16 @@ body {
   .workshops-btn-grp .btn:first-child {
     margin-right: 15px; }
 
+#landing-workshops form {
+  align-self: center; }
+
+#landing-workshops .btn-contact {
+  margin: 0;
+  cursor: pointer; }
+
+#landing-workshops .btn-divider {
+  margin: -1px; }
+
 #landing-audio {
   background: #7E5B98; }
   #landing-audio .container-fluid {
@@ -374,9 +390,11 @@ body {
     #landing-audio .container-fluid h2,
     #landing-audio .container-fluid h3 {
       color: #E5D3F2; }
-
-.audio-title {
-  text-transform: capitalize; }
+  #landing-audio .workshops-btn-grp {
+    align-self: center; }
+  #landing-audio .audio-description {
+    align-self: center;
+    text-align: center; }
 
 .btn-audio {
   cursor: pointer; }
@@ -492,6 +510,11 @@ body {
     padding-left: 10px; }
   .blog-categories .active {
     color: #FFF; }
+
+.pagination {
+  display: flex; }
+  .pagination li {
+    padding: 5px; }
 
 #post {
   padding-top: 5%; }

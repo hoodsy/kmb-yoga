@@ -52,3 +52,11 @@
 		color: $white;
 	}
 }
+
+
+.pagination {
+	display: flex;
+	li {
+		padding: 5px;
+	}	
+}

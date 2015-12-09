@@ -55,6 +55,7 @@ block content
 							+post(post)
 					
 					if data.posts.totalPages > 1
+						span PAGES
 						ul.pagination
 							if data.posts.previous
 								li: a(href='?page=' + data.posts.previous): span.glyphicon.glyphicon-chevron-left

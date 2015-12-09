@@ -98,6 +98,20 @@
 	}
 }
 
+#landing-workshops {
+	form {
+		align-self: center;
+	}
+	.btn-contact {
+		margin: 0;
+		cursor: pointer;
+	}
+	.btn-divider {
+		margin: -1px;
+	}
+}
+
+
 // Audio
 // =====
 #landing-audio {
@@ -105,11 +119,15 @@
 	.container-fluid {
 		@include purple-text();
 	}
+	.workshops-btn-grp {
+		align-self: center;
+	}
+	.audio-description {
+		align-self: center;
+		text-align: center;
+	}
 }
 
-.audio-title {
-	text-transform: capitalize;	
-}
 .btn-audio {
 	cursor: pointer;
 }
