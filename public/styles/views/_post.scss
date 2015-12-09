@@ -3,10 +3,21 @@
 
 #post {
 	padding-top: 5%;
+	@include mobile {
+		padding-top: 20vh;
+	}
+}
+#post .container {
+	@include mobile {
+		padding: 0;
+	}
 }
 
 .post-back {
 	margin-bottom: 0;
+	@include mobile {
+		padding-left: 25px;
+	}
 }
 
 .post-title {
@@ -22,9 +33,15 @@
 	width: 100%;
 	min-height: 75vh;
 	color: $green-light;
+	@include mobile {
+		width: initial;
+	}
 	.post,
 	header {
 		width: 650px;
+		@include mobile {
+			width: 85vw;
+		}
 	}
 	header {
 		margin: 0 0 25px;

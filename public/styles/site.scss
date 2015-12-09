@@ -12,6 +12,18 @@
 // You can also add your own custom variables to this file for
 // use in your site stylesheets.
 
+// Mixins
+// ======
+// Media Query
+@mixin tablet {
+  @media (min-width: 768px) and (max-width: 1024px) { @content; }
+}
+
+@mixin mobile {
+  @media (max-width: 768px) { @content; }
+}
+
+
 // Site Styles
 // ===========
 

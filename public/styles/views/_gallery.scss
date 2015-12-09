@@ -4,6 +4,15 @@
 #gallery {
 	padding-top: 5%;
 	background-color: $grey-dark;
+	@include mobile {
+		padding-top: 7.5%;
+	}
+}
+
+#gallery .container {
+	@include mobile {
+		width: calc(100vw - 50px);
+	}
 }
 
 .gallery-header {
@@ -31,8 +40,12 @@
 	align-items: baseline;
 	justify-content: space-between;
 	.gallery-image {
-		padding: 15px 0;		
+		padding: 15px 0;
 		height: 300px;
+		@include mobile {
+			height: 100%;
+			width: calc(100vw - 50px);
+		}
 	}
 	.gallery-image img {
 		width: 100%;

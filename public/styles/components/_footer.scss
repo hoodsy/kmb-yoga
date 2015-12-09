@@ -16,6 +16,9 @@
 	max-width: 650px;
 	margin: 0 auto;
 	padding: 0;
+	@include mobile {
+		flex-direction: column;
+	}
 }
 
 #footer p {
@@ -24,6 +27,9 @@
 
 .footer-right {
 	margin-left: auto;
+	@include mobile {
+		margin: 25px 0 0;
+	}
 }
 
 #footer .btn-contact {

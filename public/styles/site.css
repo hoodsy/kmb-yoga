@@ -108,6 +108,9 @@ body {
   margin: 0 auto;
   padding: 25px;
   width: 1200px; }
+  @media (max-width: 768px) {
+    .container {
+      width: calc(100vw - 50px); } }
 
 .container-fluid {
   display: flex;
@@ -125,6 +128,9 @@ body {
   justify-content: center;
   width: 100%;
   transition: all 0.15s ease-in-out; }
+  @media (max-width: 768px) {
+    #header {
+      background: transparent !important; } }
 
 #header .container {
   padding: 15px; }
@@ -153,12 +159,30 @@ body {
 
 .nav {
   display: flex; }
+  @media (max-width: 768px) {
+    .nav {
+      flex-direction: column;
+      align-items: flex-end;
+      position: absolute;
+      top: 75px;
+      right: 15px;
+      display: none;
+      text-align: right; } }
   .nav li {
     padding: 15px; }
+    @media (max-width: 768px) {
+      .nav li {
+        padding: 0; } }
     .nav li a {
       color: #E0F2D3; }
       .nav li a:hover {
         color: #FFF; }
+
+.nav-btn {
+  display: none; }
+  @media (max-width: 768px) {
+    .nav-btn {
+      display: block; } }
 
 .bumper {
   flex: 1; }
@@ -227,12 +251,18 @@ body {
   max-width: 650px;
   margin: 0 auto;
   padding: 0; }
+  @media (max-width: 768px) {
+    #footer .container-fluid {
+      flex-direction: column; } }
 
 #footer p {
   margin: 0; }
 
 .footer-right {
   margin-left: auto; }
+  @media (max-width: 768px) {
+    .footer-right {
+      margin: 25px 0 0; } }
 
 #footer .btn-contact {
   display: block;
@@ -251,13 +281,21 @@ body {
   min-height: 768px;
   background-image: url("../images/yoga_kbarnes_039.JPG");
   background-size: 100vw;
+  background-position: center;
   box-shadow: inset 0 0 0 100vh rgba(77, 76, 79, 0.5); }
+  @media (max-width: 768px) {
+    #landing-hero-1 {
+      min-height: 180px; } }
 
 #landing-hero-2 {
   min-height: 590px;
   background-image: url("../images/yoga_kbarnes_045.JPG");
   background-size: 100vw;
+  background-position: center;
   box-shadow: inset 0 0 0 100vh rgba(77, 76, 79, 0.5); }
+  @media (max-width: 768px) {
+    #landing-hero-2 {
+      min-height: 150px; } }
 
 #landing-about .container-fluid,
 #landing-workshops .container-fluid,
@@ -267,6 +305,11 @@ body {
   max-width: 650px;
   padding: 25px 0 50px;
   text-align: left; }
+  @media (max-width: 768px) {
+    #landing-about .container-fluid,
+    #landing-workshops .container-fluid,
+    #landing-audio .container-fluid {
+      padding: 25px; } }
 
 #landing-about {
   background: #75985B; }
@@ -341,6 +384,13 @@ body {
 #gallery {
   padding-top: 5%;
   background-color: #4D4C4F; }
+  @media (max-width: 768px) {
+    #gallery {
+      padding-top: 7.5%; } }
+
+@media (max-width: 768px) {
+  #gallery .container {
+    width: calc(100vw - 50px); } }
 
 .gallery-header {
   padding: 50px 0 2px;
@@ -366,16 +416,24 @@ body {
   .gallery-images .row .gallery-image {
     padding: 15px 0;
     height: 300px; }
+    @media (max-width: 768px) {
+      .gallery-images .row .gallery-image {
+        height: 100%;
+        width: calc(100vw - 50px); } }
   .gallery-images .row .gallery-image img {
     width: 100%; }
 
 .contact-header {
+  padding-top: 5%;
   text-align: center; }
 
 .contact-form {
   width: 650px;
   min-height: 75vh;
   padding-bottom: 75px; }
+  @media (max-width: 768px) {
+    .contact-form {
+      width: 85vw; } }
 
 .contact-form .form-group {
   padding: 10px 0;
@@ -437,9 +495,19 @@ body {
 
 #post {
   padding-top: 5%; }
+  @media (max-width: 768px) {
+    #post {
+      padding-top: 20vh; } }
+
+@media (max-width: 768px) {
+  #post .container {
+    padding: 0; } }
 
 .post-back {
   margin-bottom: 0; }
+  @media (max-width: 768px) {
+    .post-back {
+      padding-left: 25px; } }
 
 .post-title {
   margin: 0; }
@@ -452,9 +520,16 @@ body {
   width: 100%;
   min-height: 75vh;
   color: #E0F2D3; }
+  @media (max-width: 768px) {
+    #post article {
+      width: initial; } }
   #post article .post,
   #post article header {
     width: 650px; }
+    @media (max-width: 768px) {
+      #post article .post,
+      #post article header {
+        width: 85vw; } }
   #post article header {
     margin: 0 0 25px;
     padding-bottom: 5px;

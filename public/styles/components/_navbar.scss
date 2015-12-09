@@ -7,7 +7,9 @@
   justify-content: center;
   width: 100%;
   transition: all 0.15s ease-in-out;
-  // background: rgba(117, 152, 91, 0.9);
+  @include mobile {
+  	background: transparent !important;
+  }
 }
 
 #header .container {
@@ -40,12 +42,31 @@
 }
 .nav {
 	display: flex;
+	@include mobile {
+		flex-direction: column;
+		align-items: flex-end;
+		position: absolute;
+		top: 75px;
+		right: 15px;
+		display: none;
+		text-align: right;
+	}
 	li {
 		padding: 15px;
+		@include mobile {
+			padding: 0;
+		}
 		a {
 			color: $green-light;
 			&:hover { color: $white; }
 		}
+	}
+}
+
+.nav-btn {
+	display: none;
+	@include mobile {
+		display: block;
 	}
 }
 

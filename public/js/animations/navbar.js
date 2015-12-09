@@ -9,4 +9,8 @@ $(document).scroll(function () {
 	} else {
 		$('#header').css('background', 'transparent');
 	}
-})
+});
+
+$('.navbar-btn').on('click', function() {
+	$('.nav').toggle();
+});
