@@ -21,6 +21,7 @@ keystone.init({
 	'favicon': 'public/favicon.ico',
 	'views': 'templates/views',
 	'view engine': 'jade',
+	'cookie secret': 'F`)*e/n_r|^(&*cEr{dAWT^vRw8s{>ahPsz<9eM^xITI-/a1/!]7,wMf]CGsfu0R',
 	
 	'auto update': true,
 	'session': true,
