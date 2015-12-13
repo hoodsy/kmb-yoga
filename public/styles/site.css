@@ -346,11 +346,13 @@ body {
   flex-direction: column;
   align-self: center;
   align-items: center;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 25px; }
 
 .workshops-table-item {
   display: flex;
   align-items: baseline;
+  flex-wrap: wrap;
   width: 100%;
   padding: 15px 0;
   border-top: 2px solid #E0E0E1; }
@@ -358,14 +360,18 @@ body {
     border-bottom: 2px solid #E0E0E1; }
 
 .workshop-title {
+  width: 50%;
   font-family: 'museo-sans-cond-500';
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  text-transform: capitalize; }
 
 .workshop-description {
-  margin-left: auto; }
+  margin-left: auto;
+  width: 50%;
+  text-align: right; }
 
 .workshops-btn-grp {
-  align-self: flex-end;
+  align-self: center;
   padding: 25px 0; }
   .workshops-btn-grp .btn {
     display: inline-block; }
@@ -390,11 +396,13 @@ body {
     #landing-audio .container-fluid h2,
     #landing-audio .container-fluid h3 {
       color: #E5D3F2; }
-  #landing-audio .workshops-btn-grp {
-    align-self: center; }
   #landing-audio .audio-description {
     align-self: center;
     text-align: center; }
+  #landing-audio .workshops-btn-grp {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; }
 
 .btn-audio {
   cursor: pointer; }
