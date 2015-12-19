@@ -4,7 +4,9 @@ block content
 	#landing-hero-1
 	#landing-about
 		.container-fluid
-			h1.headline Yoga from the inside-out.
+			h1.headline 
+				span.headline-name Karen Miscall-Bannon
+				span Embodyoga® from the inside-out.
 			p.landing-about-body1 
 				| With yoga trainings for novices to instructors, 
 				| I bring 30 years of study, passion and knowledge to every 
@@ -36,11 +38,48 @@ block content
 		.container-fluid
 			h1.headline Teacher Trainings
 			div.workshops-btn-grp
-				a(href='/blog/post/60200-hour-course').btn.btn-workshops 60/200 Hour Course
-				a(href='/blog/post/500-hour-course').btn.btn-workshops 300 Hour Course
+				a(href='/blog/post/200-hour-course').btn.btn-workshops 200 Hour Course
+				a(href='/blog/post/300-hour-course').btn.btn-workshops 300 Hour Course
 				a(href='/blog/post/class-schedule').btn.btn-workshops View Classes
 			h1.headline Workshops
-			!{ workshops.content.full }
+			ul.workshops-table
+				li.workshops-table-item
+					a(href="http://leapyoga.net/workshops/" target="_blank").workshop-title
+						| Refine and Align
+					span.workshop-description Leap Yoga / Folsom, CA / 1/15/16
+				li.workshops-table-item
+					a(href="https://clients.mindbodyonline.com/classic/home?studioid=178879" target="_blank").workshop-title 	
+						| Sequencing for Teachers
+					span.workshop-description Pure Joy Yoga / Yuba City, CA / 12/19/15
+				li.workshops-table-item
+					a(href="http://mindfulyogatherapy.org/wp/event/mindful-yoga-therapy-training-for-yoga-teachers-%E2%80%A2-15-hour-program-4/" target="_blank").workshop-title
+						| Mindful Yoga Therapy
+					span.workshop-description Mama Bootcamp / Folsom, CA / 1/30-31/2016
+					form(action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top")
+						input(type="hidden" name="cmd" value="_s-xclick")
+						input(type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----")
+						button(name='submit').btn.btn-contact 
+							| Purchase Now
+				li.workshops-table-item
+					a(href="http://newingtonyoga.com/wp/ai1ec_event/an-ashtanga-weekend-with-karen-miscall-bannon/?instance_id=3061" target="_blank").workshop-title 
+						| Ashtanga Vinyasa Weekend
+					span.workshop-description Newington Yoga Center / Newington, CA / 4/22-24/15
+			h1.headline Classes
+			p Hosted at Main St Yoga, Placerville
+			ul.workshops-table
+				li.workshops-table-item
+					span.workshop-title Morning Flow
+					span.workshop-description Tues, Wed, Thurs 6:00am - 7:15am
+				li.workshops-table-item
+					span.workshop-title Easy Flow
+					span.workshop-description Wed 4:30pm - 5:45pm
+				li.workshops-table-item
+					span.workshop-title Basics
+					span.workshop-description Wed 6:00pm - 7:00pm
+				li.workshops-table-item
+					span.workshop-title Ashtanga Vinyasa
+					span.workshop-description Thurs 4:30pm - 6:00pm
+			//- !{ workshops.content.full }
 			a(href='/blog/classes').btn.btn-contact 
 				| Interested in the details?
 				hr.btn-divider

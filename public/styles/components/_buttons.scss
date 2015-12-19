@@ -43,6 +43,7 @@
 }
 .btn-workshops {
 	color: $grey-light;
+	font-size: 1rem;
 	&:hover {
 		background-color: darken($grey-dark, 5%);
 	}

@@ -7,9 +7,6 @@
   justify-content: center;
   width: 100%;
   transition: all 0.15s ease-in-out;
-  @include mobile {
-  	background: transparent !important;
-  }
 }
 
 #header .container {

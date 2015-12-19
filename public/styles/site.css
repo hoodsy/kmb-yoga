@@ -128,9 +128,6 @@ body {
   justify-content: center;
   width: 100%;
   transition: all 0.15s ease-in-out; }
-  @media (max-width: 768px) {
-    #header {
-      background: transparent !important; } }
 
 #header .container {
   padding: 15px; }
@@ -224,7 +221,8 @@ body {
   background-color: transparent; }
 
 .btn-workshops {
-  color: #E0E0E1; }
+  color: #E0E0E1;
+  font-size: 1rem; }
   .btn-workshops:hover {
     background-color: #403f42; }
 
@@ -284,9 +282,10 @@ body {
     height: 100px; }
 
 #landing-hero-1 {
-  min-height: 768px;
+  min-height: 512px;
+  height: 75vh;
   background-image: url("../images/yoga_kbarnes_039.JPG");
-  background-size: 100vw;
+  background-size: cover;
   background-position: center;
   box-shadow: inset 0 0 0 100vh rgba(77, 76, 79, 0.5); }
   @media (max-width: 768px) {
@@ -296,7 +295,7 @@ body {
 #landing-hero-2 {
   min-height: 590px;
   background-image: url("../images/yoga_kbarnes_045.JPG");
-  background-size: 100vw;
+  background-size: cover;
   background-position: center;
   box-shadow: inset 0 0 0 100vh rgba(77, 76, 79, 0.5); }
   @media (max-width: 768px) {
@@ -328,9 +327,15 @@ body {
 
 .headline {
   align-self: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   margin-bottom: 25px;
   border-bottom: 2px solid #E5D3F2;
   border-radius: 1px; }
+
+.headline-name {
+  color: #E5D3F2; }
 
 #landing-workshops {
   background: #4D4C4F; }

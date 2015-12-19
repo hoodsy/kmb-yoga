@@ -10,8 +10,8 @@ block content
 			each gallery in galleries
 				div.gallery-header
 					h1= gallery.name
-						if gallery.publishedDate
-							span.gallery-header-date= gallery._.publishedDate.format('Do MMM YYYY')
+						//- if gallery.publishedDate
+						//- 	span.gallery-header-date= gallery._.publishedDate.format('Do MMM YYYY')
 				
 				.row.gallery-images
 					if gallery.heroImage.exists
