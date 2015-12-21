@@ -335,7 +335,8 @@ body {
   border-radius: 1px; }
 
 .headline-name {
-  color: #E5D3F2; }
+  color: #E5D3F2;
+  text-transform: capitalize; }
 
 #landing-workshops {
   background: #4D4C4F; }

@@ -5,8 +5,8 @@ block content
 	#landing-about
 		.container-fluid
 			h1.headline 
-				span.headline-name Karen Miscall-Bannon
-				span Embodyoga® from the inside-out.
+				a(href="/blog/post/my-yoga-journey").headline-name Karen Miscall-Bannon
+				span Yoga from the inside-out.
 			p.landing-about-body1 
 				| With yoga trainings for novices to instructors, 
 				| I bring 30 years of study, passion and knowledge to every 
@@ -14,8 +14,8 @@ block content
 				| together we will explore the physical, spiritual, and
 				| intellectual growth that you are seeking, so you can 
 				| realize your fullest potential.
-				<br>
-				<br>
+				br
+				br
 				block.landing-quote
 					| Yoga is like music. The rhythm of the body, the 
 					| melody of the mind and the harmony of the soul 
@@ -25,6 +25,19 @@ block content
 			p.landing-about-body2 
 				| Read about 
 				a(href='/blog/post/my-yoga-journey') my yoga journey.
+				br
+				br
+				| Explore the principles of
+				a(href="http://embodyoga.com/about_embodyoga.html")  Embodyoga®.
+				br
+				br
+				| Learn the
+				a(href="http://mindfulyogatherapy.org/wp/")  Mindful Yoga Therapy
+				|  approach.
+				br
+				br
+				| Take a look at the 
+				a(href="http://prisonyoga.org/")  Prison Yoga Project.
 				br
 				br
 				| For deeper explorations into the anatomical and philosophical
@@ -47,10 +60,6 @@ block content
 					a(href="http://leapyoga.net/workshops/" target="_blank").workshop-title
 						| Refine and Align
 					span.workshop-description Leap Yoga / Folsom, CA / 1/15/16
-				li.workshops-table-item
-					a(href="https://clients.mindbodyonline.com/classic/home?studioid=178879" target="_blank").workshop-title 	
-						| Sequencing for Teachers
-					span.workshop-description Pure Joy Yoga / Yuba City, CA / 12/19/15
 				li.workshops-table-item
 					a(href="http://mindfulyogatherapy.org/wp/event/mindful-yoga-therapy-training-for-yoga-teachers-%E2%80%A2-15-hour-program-4/" target="_blank").workshop-title
 						| Mindful Yoga Therapy
@@ -79,6 +88,9 @@ block content
 				li.workshops-table-item
 					span.workshop-title Ashtanga Vinyasa
 					span.workshop-description Thurs 4:30pm - 6:00pm
+				li.workshops-table-item
+					span.workshop-title Vinyasa Basics
+					span.workshop-description Leap Yoga / Folsom, CA / Thurs 9:00am - 10:15pm
 			//- !{ workshops.content.full }
 			a(href='/blog/classes').btn.btn-contact 
 				| Interested in the details?
@@ -97,12 +109,11 @@ block content
 			div.workshops-btn-grp
 				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
 				<input type="hidden" name="cmd" value="_s-xclick">
-				<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
-				">
+				<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
 				<button name='submit' class='btn btn-audio'>Buy now for $10</button>
 				</form>
 				a(href='https://www.dropbox.com/s/kx8dijos6qlvlmu/Karen%20Yoganidra%202%20-May%2012%20-14%20mix%202%20w%20eq.wav?oref=e&n=178087338' target="_blank").btn.btn-audio
-					| Yoganidra 2
+					| Yoga Nidra
 				a(href='https://www.dropbox.com/sh/41h0tcc4y8upzrb/AABvOX1T7DsjypGGr2MRqYBqa/%20Sanskrit%20Pose%20Names?dl=0' target="_blank").btn.btn-audio
 					| Sanskrit Pose Names
 				a(href='/' style='display:none;').btn.btn-audio
